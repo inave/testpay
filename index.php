@@ -211,18 +211,7 @@ $app_name = idx($app_info, 'name', '');
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 Transfer amount to the target email <br>
 
-Select box below not doing anything yet...<br>
-<select>
-          <?php
-            foreach ($friends as $friend) {
-              // Extract the pieces of info we need from the requests above
-              $name = idx($friend, 'name');
-          ?>
-			<option value="<?php echo he($name); ?>"><?php echo he($name); ?></option>
-          <?php
-			}
-		  ?>
-</select> <br>
+
 
 target email: <input type="text" name="business"> <br>
 amount: <input type="text" name="amount"> <br>
