@@ -219,8 +219,9 @@ Select box below not doing anything yet...
               $name = idx($friend, 'name');
           ?>
 			<option value="<?php echo he($name); ?>"><?php echo he($name); ?></option>
-         
+          <?php
 			}
+		  ?>
 </select>
 
 target email: <input type="text" name="business"> <br>
