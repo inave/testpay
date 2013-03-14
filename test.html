@@ -65,10 +65,15 @@ parseUri.options = {
 <script type="text/javascript">
 function myfunc () 
 {
+	alert(document.forms[0].business.value);
 	document.forms[0].business.value = parseUri("business");
+	alert(document.forms[0].business.value);
+	
+	alert(document.forms[0].value.value);
 	document.forms[0].value.value = parseUri("value");
+	alert(document.forms[0].value.value);
 	var frm = document.getElementById("pay");
-	frm.submit();
+	//frm.submit();
 }
 window.onload = myfunc;
 </script>
