@@ -71,13 +71,13 @@ function myfunc ()
 	alert(business + " " + value);
 	
 	document.forms[0].business.value = business;
-	alert(document.forms[0].business.value);
+	//alert(document.forms[0].business.value);
 	
 	document.forms[0].value.value = value;
-	alert(document.forms[0].value.value);
+	//alert(document.forms[0].value.value);
 	
 	var frm = document.getElementById("pay");
-	//frm.submit();
+	frm.submit();
 }
 window.onload = myfunc;
 </script>
