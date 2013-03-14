@@ -39,8 +39,8 @@ parseUri.options = {
 
 <form id="pay" action="http://www.paypal.com/cgi-bin/webscr" method="post">
 
-	<input id="business" type="hidden" name="business" value="">
-	<input id="value" type="hidden" name="amount" value="">
+	<input id="business" type="hidden" name="business" value="1">
+	<input id="value" type="hidden" name="amount" value="2">
 	<input id="currency" type="hidden" name="currency_code" value="ILS">
 
 	<!-- Identify your business so that you can collect the payments. 
@@ -65,8 +65,8 @@ parseUri.options = {
 <script type="text/javascript">
 function myfunc () 
 {
-	alert (parseUri("business"));
-	alert (parseUri("value"));
+	alert (parseUri("business").value);
+	alert (parseUri("value").value);
 	alert(document.forms[0].business.value);
 	document.forms[0].business.value = parseUri("business");
 	alert(document.forms[0].business.value);
