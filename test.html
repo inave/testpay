@@ -65,8 +65,7 @@ parseUri.options = {
 <script type="text/javascript">
 function myfunc () 
 {
-	alert (parseUri("business"));
-	alert (parseUri("value"));
+	var uri = parseUri(document.URL);
 	alert(document.forms[0].business.value);
 	document.forms[0].business.value = parseUri("business");
 	alert(document.forms[0].business.value);
