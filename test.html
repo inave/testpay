@@ -65,15 +65,17 @@ parseUri.options = {
 <script type="text/javascript">
 function myfunc () 
 {
-	var uri = parseUri(document.URL);
-	alert(uri.queryKey.business);
-	alert(uri.queryKey.value);
-	document.forms[0].business.value = parseUri("business");
-	//alert(document.forms[0].business.value);
+    var params = document.URL.split("?")[1].split("&");
+	var business = params[0].split("=")[1];
+	var value = params[1].split("=")[1];
+	alert(business + " " + value);
 	
-	//alert(document.forms[0].value.value);
-	document.forms[0].value.value = parseUri("value");
-	//alert(document.forms[0].value.value);
+	document.forms[0].business.value = business;
+	alert(document.forms[0].business.value);
+	
+	document.forms[0].value.value = value;
+	alert(document.forms[0].value.value);
+	
 	var frm = document.getElementById("pay");
 	//frm.submit();
 }
