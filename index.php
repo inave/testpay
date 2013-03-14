@@ -208,7 +208,7 @@ $app_name = idx($app_info, 'name', '');
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<form action="http://www.paypal.com/cgi-bin/webscr" method="post">
+<form target="_blank" action="http://www.paypal.com/cgi-bin/webscr" method="post">
 Transfer amount to the target email <br>
 
 
