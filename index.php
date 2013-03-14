@@ -215,6 +215,11 @@ Transfer amount to the target email <br>
 
 target email: <input type="text" name="business"> <br>
 amount: <input type="text" name="amount"> <br>
+currency: 
+<select name="currency_code">
+   <option value="USD"><US Dollar></option>
+   <option value="ILS"><Israeli Shekel></option>
+</select> <br>	
 
 	<!-- Identify your business so that you can collect the payments. 
 	
@@ -224,7 +229,6 @@ amount: <input type="text" name="amount"> <br>
 
 	<!-- Specify details about the item that buyers will purchase. -->
 	<input type="hidden" name="item_name" value="send to a friend">
-	
 	<input type="hidden" name="currency_code" value="USD">
 
 	<!-- Display the payment button. -->
